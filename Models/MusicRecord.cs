@@ -3,9 +3,9 @@
     public class MusicRecord
     {
         public int Id;
-        public string Artist;
+        public string? Artist;
         public int PublicationYear;
-        public string Title;
+        public string? Title;
         public int Duration;
 
         public override string ToString()
