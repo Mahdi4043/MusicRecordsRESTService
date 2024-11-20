@@ -3,9 +3,10 @@
     public interface IMusicRepository
     {
         MusicRecord Add(MusicRecord music);
-        IEnumerable<MusicRecord> Get(int? yearAfter = null, string? titleIncludes = null, string? orderBy = null);
-        Movie? GetById(int id);
-        Movie? Remove(int id);
-        Movie? Update(int id, Movie movie);
+        IEnumerable<MusicRecord> Get(int? publicationYear = null, string? titleIncludes = null, string? orderBy = null);
+        MusicRecord? GetById(int id);
+        MusicRecord? Remove(int id);
+        MusicRecord? Update(int id, MusicRecord movie);
     }
 }
+
